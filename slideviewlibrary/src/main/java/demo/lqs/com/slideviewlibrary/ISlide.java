@@ -8,6 +8,7 @@ import android.view.MotionEvent;
  */
 
 public interface ISlide {
+
     void onMove(MotionEvent event);
 
     float getSlideX();
