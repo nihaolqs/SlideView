@@ -4,8 +4,10 @@
     android:layout_height="match_parent">
 
     <demo.lqs.com.slideviewlibrary.SlideHistogram
-        android:layout_width="300sp"
+        android:layout_width="match_parent"
         android:layout_height="300sp"
+        android:layout_centerInParent="true"
+
 
         />
 

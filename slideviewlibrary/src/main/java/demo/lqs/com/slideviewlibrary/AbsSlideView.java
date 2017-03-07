@@ -10,6 +10,7 @@ import android.view.View;
 
 /**
  * Created by lin on 2017/3/4.
+ * 可滑动View的基类
  */
 
 public abstract class AbsSlideView extends View {
@@ -34,7 +35,7 @@ public abstract class AbsSlideView extends View {
     protected void onDraw(Canvas canvas) {
 
 
-        canvas.drawColor(0xff0000);
+//        canvas.drawColor(0xff0000);
 
         onDrawSlideChildView(canvas, mSlide);
 
@@ -55,6 +56,7 @@ public abstract class AbsSlideView extends View {
         int action = event.getAction();
         Log.e("action",action + "");
         mSlide.onMove(event);
+        mSlide.onTouch(event);
         if (action == 0) {
             return true;
         } else {
